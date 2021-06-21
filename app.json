@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "ImprimimeEsta",
+    "slug": "ImprimimeEsta",
+    "owner": "alkuy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "sdkVersion": "41.0.0",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.alkuy.ImprimimeEsta"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
