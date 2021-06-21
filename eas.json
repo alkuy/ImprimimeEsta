@@ -2,8 +2,12 @@
   "builds": {
     "android": {
       "release": {
-        "workflow": "generic"
+        "workflow": "managed"
       }
+    },
+    "preview": {
+      "workflow": "managed",
+      "buildType": "apk"
     },
     "ios": {
       "release": {
