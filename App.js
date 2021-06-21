@@ -18,6 +18,7 @@ export default function App() {
 
   const connectPrinter = (printer) => {
     //connect printer
+    //console.log(printer.inner_mac_address)
     BLEPrinter.connectPrinter(printer.inner_mac_address).then(
       setCurrentPrinter,
       error => console.warn(error))
@@ -40,7 +41,7 @@ export default function App() {
             onValueChange={(itemValue) => connectPrinter(itemValue)}
         >
         {printers.map(printer => {
-            return (<Picker.Item  label={printer.device_name} value={printer.device_name} key={printer.inner_mac_address}/>) 
+            return (<Picker.Item  label={printer.device_name} value={printer} key={printer.inner_mac_address}/>) 
         })}
         </Picker>
       </View>
@@ -51,7 +52,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <PreparaPrinter/>
-      <Text style={styles.text}>Canario imprimime esta: Nacional Segundon!</Text>
+      <Text style={styles.text}>Canario imprimime esta: Nacional Segundon! - Aceptalo Adrián</Text>
       <View style={styles.but}>
         <Button title='Imprime Texto' onPress={printTextTest}/>
       </View>
@@ -85,6 +86,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 2,
     width: '50%',
     height: 50,
-    marginBottom: 10,
+    marginBottom: 20,
 },
 });
