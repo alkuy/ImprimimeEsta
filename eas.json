@@ -3,6 +3,10 @@
     "android": {
       "release": {
         "workflow": "generic"
+      },
+      "preview": {
+        "workflow": "generic",
+        "gradleCommand": ":app:assembleRelease"
       }
     },
     "ios": {
