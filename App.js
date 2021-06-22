@@ -44,7 +44,7 @@ export default function App() {
             return (<Picker.Item  label={printer.device_name} value={printer} key={printer.inner_mac_address}/>) 
         })}
         </Picker>
-      </View>
+      </View> 
     )
     //printers = printers.map(printer => {return ({device_name: printer.device_name, inner_mac_address: printer.inner_mac_address})})
   }
